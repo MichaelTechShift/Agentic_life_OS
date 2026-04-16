@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "agentic_os_core",
+      "type": "text",
+      "x": 300,
+      "y": 200,
+      "width": 400,
+      "height": 150,
+      "text": "# Agentic Life OS\n\nContext / References Architecture\nOptimized for Claude Code",
+      "color": "5"
+    },
+    {
+      "id": "virtualea_module",
+      "type": "text",
+      "x": 50,
+      "y": 450,
+      "width": 350,
+      "height": 200,
+      "text": "## VirtualEA\n\n**Professional & Work**\n\nContext: Weekly priorities, projects, decisions\n\nReferences: Past work, SOPs, vendor data",
+      "color": "1"
+    },
+    {
+      "id": "teams_integration",
+      "type": "text",
+      "x": 50,
+      "y": 750,
+      "width": 350,
+      "height": 100,
+      "text": "Microsoft Teams\n\nChat interface & notifications",
+      "color": "2"
+    },
+    {
+      "id": "stayathome_module",
+      "type": "text",
+      "x": 550,
+      "y": 450,
+      "width": 350,
+      "height": 200,
+      "text": "## Homebase (Stay-At-Home)\n\n**Household & Family**\n\nContext: Meal plan, logistics, family updates\n\nReferences: Property, finances, insurance",
+      "color": "4"
+    },
+    {
+      "id": "whatsapp_integration",
+      "type": "text",
+      "x": 550,
+      "y": 750,
+      "width": 350,
+      "height": 100,
+      "text": "WhatsApp\n\nFamily chat interface & updates",
+      "color": "3"
+    },
+    {
+      "id": "module_integrators",
+      "type": "text",
+      "x": 300,
+      "y": 450,
+      "width": 200,
+      "height": 120,
+      "text": "Module Integrators\n\nCross-module sync & shared decisions",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_os_to_vea",
+      "fromNode": "agentic_os_core",
+      "fromSide": "left",
+      "toNode": "virtualea_module",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "powers"
+    },
+    {
+      "id": "edge_os_to_sh",
+      "fromNode": "agentic_os_core",
+      "fromSide": "right",
+      "toNode": "stayathome_module",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "powers"
+    },
+    {
+      "id": "edge_os_to_integrators",
+      "fromNode": "agentic_os_core",
+      "fromSide": "bottom",
+      "toNode": "module_integrators",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "coordinates"
+    },
+    {
+      "id": "edge_vea_to_teams",
+      "fromNode": "virtualea_module",
+      "fromSide": "bottom",
+      "toNode": "teams_integration",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "integrates"
+    },
+    {
+      "id": "edge_sh_to_whatsapp",
+      "fromNode": "stayathome_module",
+      "fromSide": "bottom",
+      "toNode": "whatsapp_integration",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "integrates"
+    },
+    {
+      "id": "edge_vea_to_integrators",
+      "fromNode": "virtualea_module",
+      "fromSide": "right",
+      "toNode": "module_integrators",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "syncs"
+    },
+    {
+      "id": "edge_sh_to_integrators",
+      "fromNode": "stayathome_module",
+      "fromSide": "left",
+      "toNode": "module_integrators",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "syncs"
+    }
+  ]
+}
