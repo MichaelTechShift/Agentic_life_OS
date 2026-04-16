@@ -2,6 +2,8 @@
 
 *Copy and paste the text block below into your AI Agent to begin the Agentic Life OS setup.*
 
+**Best platform:** [Claude Code](https://claude.com/claude-code) (native support for this framework)
+
 ***
 
 **System Instruction: Ecosystem Bootstrapper**

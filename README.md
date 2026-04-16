@@ -19,9 +19,16 @@ To keep cognitive overhead low for the agent:
 
 You do not need to build this manually. An AI can build it for you via an onboarding interview.
 
+### Recommended: Claude Code
+Use **[Claude Code](https://claude.com/claude-code)** (Claude's native IDE environment) as your setup interface. Claude Code reads `CLAUDE.md` files natively, understands this framework architecture, and has direct file system access for zero-friction scaffolding.
+
 1. **Pick your path**: Decide if you want to build the Virtual EA, the Household Command Center, or both.
-2. **Copy the Prompt**: 
-   - Open [setup/00_master_init.md](setup/00_master_init.md) and copy the initial prompt.
-   - Paste it into your preferred Agentic AI Sandbox (e.g., Cursor, GitHub Copilot Workspace, Gemini, Claude Computer Use).
-3. **Take the Interview**: The AI will ask you questions one by one about your life/work.
-4. **Auto-Generate**: Once the interview completes, the AI will automatically create the folder structure found in `templates/` and populate it with your data.
+2. **Open in Claude Code**: Clone or download this repo and open the folder in Claude Code.
+3. **Paste the Setup Prompt**: 
+   - Copy the initial prompt from [setup/00_master_init.md](setup/00_master_init.md).
+   - Paste into your Claude Code chat window.
+4. **Take the Interview**: Claude will ask you questions one by one about your life/work.
+5. **Auto-Generate**: Once the interview completes, Claude will create the folder structure and populate it with your data.
+
+### Alternative: Other AI Platforms
+If you prefer a different environment (Cursor, GitHub Copilot, Gemini, etc.), the same process works — copy the setup prompt and paste it into your chosen AI sandbox. Claude-based environments (Claude API, Claude Code) offer the best experience due to native `CLAUDE.md` support and prompt caching for repeated reads.
